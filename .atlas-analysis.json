@@ -1,0 +1,76 @@
+{
+  "projectType": "general",
+  "projectName": "nvim-config",
+  "projectDescription": "A highly customized Neovim configuration featuring LSP support, advanced plugin management, and custom Nushell integration.",
+  "theme": "aspen",
+  "primaryColor": "#d4879c",
+  "lightColor": "#ebdbb2",
+  "darkColor": "#504945",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "installation",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Configuration",
+        "pages": [
+          "configuration/core-settings",
+          "configuration/keybindings",
+          "configuration/plugin-management"
+        ]
+      },
+      {
+        "group": "Plugins",
+        "pages": [
+          "plugins/lsp-setup",
+          "plugins/telescope-navigation",
+          "plugins/ui-theming",
+          "plugins/git-integration",
+          "plugins/treesitter"
+        ]
+      },
+      {
+        "group": "Custom Features",
+        "pages": [
+          "features/nushell-integration",
+          "features/custom-commands"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "reference/keybindings",
+          "reference/plugins",
+          "reference/lsp-servers"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "LSP support with Mason and lsp-zero for multiple languages",
+    "Advanced fuzzy finding with Telescope",
+    "Custom Nushell integration for running shell commands in floating windows",
+    "Git integration with Neogit and Git blame",
+    "Harpoon for quick file navigation",
+    "Multiple color schemes (Gruvbox, Nord, Rose Pine, Dracula, Tokyo Night)",
+    "Treesitter for syntax highlighting and code parsing",
+    "Code formatting with Conform.nvim"
+  ],
+  "publicApiSurface": [
+    "require('fastfist')",
+    "require('fastfist.remap')",
+    "require('fastfist.packer')",
+    "require('fastfist.set')",
+    "require('fastfist.nushell').setup()",
+    "vim.keymap.set() - Custom keybindings",
+    "color(color_name) - Color scheme function",
+    "M.run_with_nu() - Run Nushell commands",
+    "M.run_with_zsh() - Run Zsh commands",
+    "M.rerun_last_command() - Rerun last shell command"
+  ]
+}
